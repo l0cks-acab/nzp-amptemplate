@@ -1,5 +1,5 @@
 ExecutablePath={{$ROOT}}/nzportable{{$EXECUTABLEEXTENSION}}
-Startup=-dedicated +sv_port {{sv_port}} +sv_port_tcp {{sv_port_tcp}} +com_protocolname {{com_protocolname}} +sv_mintic {{sv_mintic}} +sv_maxtic {{sv_maxtic}} +sv_public {{sv_public}} +hostname "{{hostname}}" +maxclients {{maxclients}} +map ndu
+Startup=-dedicated +map ndu {{$FormattedArgs}}
 WorkingDirectory={{$ROOT}}
 EnvironmentVariables=
 PreStartScript=
@@ -33,3 +33,8 @@ UpdateCheckTimeout=30
 UpdateCheckSSLVerify=true
 UpdateCheckFollowRedirects=true
 UpdateCheckMaxRedirects=5
+CommandLineParameterFormat=+{0} {1}
+CommandLineParameterDelimiter= 
+StartupConfirmationMode=WaitForMessage
+StartupConfirmationExpression=.*Server started.*
+ShutdownMethod=RunCommand

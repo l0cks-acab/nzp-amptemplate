@@ -14,7 +14,8 @@
         "DefaultValue": "27500",
         "Placeholder": "27500",
         "Required": true,
-        "EnumValues": {}
+        "EnumValues": {},
+        "IsFlagArgument": false
     },
     {
         "DisplayName": "Server Port (TCP/WebSocket)",
@@ -31,7 +32,8 @@
         "SkipIfEmpty": true,
         "DefaultValue": "27501",
         "Placeholder": "27501",
-        "EnumValues": {}
+        "EnumValues": {},
+        "IsFlagArgument": false
     },
     {
         "DisplayName": "Protocol Name",
@@ -47,7 +49,8 @@
         "EnumValues": {
             "NZP-REBOOT": "NZP-REBOOT (Desktop)",
             "NZP-REBOOT-WEB": "NZP-REBOOT-WEB (Web)"
-        }
+        },
+        "IsFlagArgument": false
     },
     {
         "DisplayName": "Minimum Tick Rate",
@@ -64,7 +67,8 @@
         "SkipIfEmpty": true,
         "DefaultValue": "20",
         "Placeholder": "20",
-        "EnumValues": {}
+        "EnumValues": {},
+        "IsFlagArgument": false
     },
     {
         "DisplayName": "Maximum Tick Rate",
@@ -81,7 +85,8 @@
         "SkipIfEmpty": true,
         "DefaultValue": "1000",
         "Placeholder": "1000",
-        "EnumValues": {}
+        "EnumValues": {},
+        "IsFlagArgument": false
     },
     {
         "DisplayName": "Public Server",
@@ -97,7 +102,8 @@
         "EnumValues": {
             "False": "0",
             "True": "1"
-        }
+        },
+        "IsFlagArgument": false
     },
     {
         "DisplayName": "Server Hostname",
@@ -112,7 +118,8 @@
         "SkipIfEmpty": true,
         "DefaultValue": "NZP Server",
         "Placeholder": "NZP Server",
-        "EnumValues": {}
+        "EnumValues": {},
+        "IsFlagArgument": false
     },
     {
         "DisplayName": "Max Clients",
@@ -130,6 +137,7 @@
         "DefaultValue": "32",
         "Placeholder": "32",
         "Suffix": "players",
-        "EnumValues": {}
+        "EnumValues": {},
+        "IsFlagArgument": false
     }
 ]
