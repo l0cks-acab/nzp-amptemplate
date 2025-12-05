@@ -1,10 +1,7 @@
 # Review and Documentation Files (not needed for template functionality)
-COMPARISON_ANALYSIS.md
-AMP_OFFICIAL_DOCS_REVIEW.md
-REVIEW_SUMMARY.md
-PRE_PUSH_CHECKLIST.md
-FINAL_VERIFICATION.md
-GIT_STATUS_SUMMARY.md
+# Ignore all .md files except README.md
+*.md
+!README.md
 
 # Operating System Files
 .DS_Store
