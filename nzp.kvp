@@ -1,3 +1,8 @@
+GenericModule.Meta.AppConfigId=nzp
+GenericModule.Meta.DisplayName=Nazi Zombies Portable
+GenericModule.Meta.Description=Nazi Zombies Portable (NZP) dedicated server template for AMP
+GenericModule.Meta.DisplayImageSource=
+GenericModule.Meta.OS=Windows,Linux
 ExecutablePath={{$ROOT}}/nzportable{{$EXECUTABLEEXTENSION}}
 Startup=-dedicated +map ndu {{$FormattedArgs}}
 WorkingDirectory={{$ROOT}}
