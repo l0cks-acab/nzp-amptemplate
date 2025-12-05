@@ -1,103 +1,135 @@
-{
-  "Settings": [
+[
     {
-      "Key": "sv_port",
-      "Name": "Server Port (UDP)",
-      "Description": "The UDP port the server will listen on",
-      "Type": "Integer",
-      "DefaultValue": "27500",
-      "MinValue": 1,
-      "MaxValue": 65535,
-      "Required": true
+        "DisplayName": "Server Port (UDP)",
+        "Category": "NZP:stadia_controller",
+        "Subcategory": "Server:dns:1",
+        "Description": "The UDP port the server will listen on",
+        "Keywords": "port,udp,server,sv_port",
+        "FieldName": "sv_port",
+        "InputType": "number",
+        "MinValue": "1",
+        "MaxValue": "65535",
+        "ParamFieldName": "sv_port",
+        "IncludeInCommandLine": true,
+        "DefaultValue": "27500",
+        "Placeholder": "27500",
+        "Required": true,
+        "EnumValues": {}
     },
     {
-      "Key": "sv_port_tcp",
-      "Name": "Server Port (TCP/WebSocket)",
-      "Description": "The TCP/WebSocket port the server will listen on",
-      "Type": "Integer",
-      "DefaultValue": "27501",
-      "MinValue": 1,
-      "MaxValue": 65535,
-      "Required": false
+        "DisplayName": "Server Port (TCP/WebSocket)",
+        "Category": "NZP:stadia_controller",
+        "Subcategory": "Server:dns:1",
+        "Description": "The TCP/WebSocket port the server will listen on",
+        "Keywords": "port,tcp,websocket,server,sv_port_tcp",
+        "FieldName": "sv_port_tcp",
+        "InputType": "number",
+        "MinValue": "1",
+        "MaxValue": "65535",
+        "ParamFieldName": "sv_port_tcp",
+        "IncludeInCommandLine": true,
+        "SkipIfEmpty": true,
+        "DefaultValue": "27501",
+        "Placeholder": "27501",
+        "EnumValues": {}
     },
     {
-      "Key": "com_protocolname",
-      "Name": "Protocol Name",
-      "Description": "Protocol name for the server (NZP-REBOOT for desktop, NZP-REBOOT-WEB for web)",
-      "Type": "String",
-      "DefaultValue": "NZP-REBOOT",
-      "Required": true
+        "DisplayName": "Protocol Name",
+        "Category": "NZP:stadia_controller",
+        "Subcategory": "Server:dns:1",
+        "Description": "Protocol name for the server (NZP-REBOOT for desktop, NZP-REBOOT-WEB for web)",
+        "Keywords": "protocol,name,com_protocolname",
+        "FieldName": "com_protocolname",
+        "InputType": "enum",
+        "ParamFieldName": "com_protocolname",
+        "IncludeInCommandLine": true,
+        "DefaultValue": "NZP-REBOOT",
+        "EnumValues": {
+            "NZP-REBOOT": "NZP-REBOOT (Desktop)",
+            "NZP-REBOOT-WEB": "NZP-REBOOT-WEB (Web)"
+        }
     },
     {
-      "Key": "sv_mintic",
-      "Name": "Minimum Tick Rate",
-      "Description": "Minimum server tick rate",
-      "Type": "Integer",
-      "DefaultValue": "20",
-      "MinValue": 1,
-      "MaxValue": 1000,
-      "Required": false
+        "DisplayName": "Minimum Tick Rate",
+        "Category": "NZP:stadia_controller",
+        "Subcategory": "Server:dns:1",
+        "Description": "Minimum server tick rate",
+        "Keywords": "tick,rate,minimum,sv_mintic",
+        "FieldName": "sv_mintic",
+        "InputType": "number",
+        "MinValue": "1",
+        "MaxValue": "1000",
+        "ParamFieldName": "sv_mintic",
+        "IncludeInCommandLine": true,
+        "SkipIfEmpty": true,
+        "DefaultValue": "20",
+        "Placeholder": "20",
+        "EnumValues": {}
     },
     {
-      "Key": "sv_maxtic",
-      "Name": "Maximum Tick Rate",
-      "Description": "Maximum server tick rate",
-      "Type": "Integer",
-      "DefaultValue": "1000",
-      "MinValue": 1,
-      "MaxValue": 1000,
-      "Required": false
+        "DisplayName": "Maximum Tick Rate",
+        "Category": "NZP:stadia_controller",
+        "Subcategory": "Server:dns:1",
+        "Description": "Maximum server tick rate",
+        "Keywords": "tick,rate,maximum,sv_maxtic",
+        "FieldName": "sv_maxtic",
+        "InputType": "number",
+        "MinValue": "1",
+        "MaxValue": "1000",
+        "ParamFieldName": "sv_maxtic",
+        "IncludeInCommandLine": true,
+        "SkipIfEmpty": true,
+        "DefaultValue": "1000",
+        "Placeholder": "1000",
+        "EnumValues": {}
     },
     {
-      "Key": "sv_public",
-      "Name": "Public Server",
-      "Description": "Whether the server should be publicly listed",
-      "Type": "Boolean",
-      "DefaultValue": "true",
-      "Required": false
+        "DisplayName": "Public Server",
+        "Category": "NZP:stadia_controller",
+        "Subcategory": "Server:dns:1",
+        "Description": "Whether the server should be publicly listed",
+        "Keywords": "public,server,sv_public",
+        "FieldName": "sv_public",
+        "InputType": "checkbox",
+        "ParamFieldName": "sv_public",
+        "IncludeInCommandLine": true,
+        "DefaultValue": "1",
+        "EnumValues": {
+            "False": "0",
+            "True": "1"
+        }
     },
     {
-      "Key": "hostname",
-      "Name": "Server Hostname",
-      "Description": "The name of the server",
-      "Type": "String",
-      "DefaultValue": "NZP Server",
-      "Required": false
+        "DisplayName": "Server Hostname",
+        "Category": "NZP:stadia_controller",
+        "Subcategory": "Server:dns:1",
+        "Description": "The name of the server",
+        "Keywords": "hostname,server,name",
+        "FieldName": "hostname",
+        "InputType": "text",
+        "ParamFieldName": "hostname",
+        "IncludeInCommandLine": true,
+        "SkipIfEmpty": true,
+        "DefaultValue": "NZP Server",
+        "Placeholder": "NZP Server",
+        "EnumValues": {}
     },
     {
-      "Key": "maxclients",
-      "Name": "Max Clients",
-      "Description": "Maximum number of clients that can connect",
-      "Type": "Integer",
-      "DefaultValue": "32",
-      "MinValue": 1,
-      "MaxValue": 64,
-      "Required": false
+        "DisplayName": "Max Clients",
+        "Category": "NZP:stadia_controller",
+        "Subcategory": "Server:dns:1",
+        "Description": "Maximum number of clients that can connect",
+        "Keywords": "max,clients,players,maxclients",
+        "FieldName": "maxclients",
+        "InputType": "number",
+        "MinValue": "1",
+        "MaxValue": "64",
+        "ParamFieldName": "maxclients",
+        "IncludeInCommandLine": true,
+        "SkipIfEmpty": true,
+        "DefaultValue": "32",
+        "Placeholder": "32",
+        "Suffix": "players",
+        "EnumValues": {}
     }
-  ],
-  "Startup": {
-    "PreStart": [],
-    "PostStart": [],
-    "PreStop": [],
-    "PostStop": []
-  },
-  "Environment": {},
-  "Ports": [
-    {
-      "Name": "Game Port (UDP)",
-      "Port": 27500,
-      "Protocol": "UDP",
-      "Description": "Main game port for UDP connections"
-    },
-    {
-      "Name": "Game Port (TCP/WebSocket)",
-      "Port": 27501,
-      "Protocol": "TCP",
-      "Description": "WebSocket port for web client connections"
-    }
-  ],
-  "Updates": {
-    "Enabled": false,
-    "Type": "None"
-  }
-}
+]

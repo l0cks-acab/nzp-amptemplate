@@ -1,5 +1,5 @@
 ExecutablePath={{$ROOT}}/nzportable{{$EXECUTABLEEXTENSION}}
-Startup=-dedicated +sv_port {{sv_port}} +sv_port_tcp {{sv_port_tcp}} +com_protocolname {{com_protocolname}} +sv_mintic {{sv_mintic}} +sv_maxtic {{sv_maxtic}} +sv_public {{sv_public}} +hostname "{{hostname}}" +maxclients {{maxclients}}
+Startup=-dedicated +sv_port {{sv_port}} +sv_port_tcp {{sv_port_tcp}} +com_protocolname {{com_protocolname}} +sv_mintic {{sv_mintic}} +sv_maxtic {{sv_maxtic}} +sv_public {{sv_public}} +hostname "{{hostname}}" +maxclients {{maxclients}} +map ndu
 WorkingDirectory={{$ROOT}}
 EnvironmentVariables=
 PreStartScript=
