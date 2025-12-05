@@ -103,7 +103,9 @@ AMP Instance Root/
 └── (template files - if using Method 2)
 ```
 
-**Important**: The `nzportable` binary and `nzp` folder with assets must be in the instance root directory before starting the server.
+**Important**: 
+- The `nzportable` (or `nzportable64` on Linux) binary and `nzp` folder with assets must be in the instance root directory before starting the server.
+- On Linux, if your binary is named `nzportable64`, you may need to rename it to `nzportable` or update the executable path in the instance settings to match the actual binary name.
 
 ## Configuration
 
@@ -114,7 +116,8 @@ The template provides the following configurable settings through AMP's interfac
 - **Protocol Name**: Server protocol identifier (default: "NZP-REBOOT")
   - Use "NZP-REBOOT" for desktop clients
   - Use "NZP-REBOOT-WEB" for web clients
-- **Minimum Tick Rate**: Minimum server tick rate (default: 20)
+- **Map**: The map to load on server start (default: "ndu" - Nacht der Untoten)
+- **Minimum Tick Rate (seconds)**: How frequently physics frames are calculated in seconds (default: 0.045 = 45ms = ~22fps). Lower values = higher tickrate but more bandwidth.
 - **Maximum Tick Rate**: Maximum server tick rate (default: 1000)
 - **Public Server**: Whether the server should be publicly listed (default: true)
 - **Server Hostname**: Display name for your server (default: "NZP Server")

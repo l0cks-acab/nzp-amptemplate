@@ -1,0 +1,39 @@
+# Review and Documentation Files (not needed for template functionality)
+COMPARISON_ANALYSIS.md
+AMP_OFFICIAL_DOCS_REVIEW.md
+REVIEW_SUMMARY.md
+PRE_PUSH_CHECKLIST.md
+FINAL_VERIFICATION.md
+GIT_STATUS_SUMMARY.md
+
+# Operating System Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# Editor and IDE Files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+
+# Temporary Files
+*.tmp
+*.temp
+*.log
+*.bak
+*.backup
+
+# Git
+.git/
+*.orig
+
