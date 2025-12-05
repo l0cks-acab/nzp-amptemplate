@@ -11,7 +11,7 @@ Nazi Zombies Portable (NZP) is a Quake-based first-person shooter game featuring
 Before using this template, you need to obtain the following files:
 
 1. **NZP-specific FTEQW Binary**
-   - Download `nzportable` (32-bit) or `nzportable64` (64-bit) for your platform
+   - Download `nzportable` (32-bit) or `nzportable64` (64-bit) for your platform [Link](https://github.com/nzp-team/nzportable/releases)
    - Place the executable in your AMP instance root directory
 
 2. **Game Assets**
@@ -119,4 +119,5 @@ This template is provided as-is for the AMP community. Refer to the AMPTemplates
 - This template uses command-line arguments to configure the server. Settings are passed directly to the NZP binary on startup.
 - The template supports both Windows and Linux platforms.
 - Make sure you have sufficient resources allocated (minimum 512MB RAM recommended, 1GB+ for better performance).
+
 
