@@ -17,14 +17,17 @@ Before using this template, you need to obtain the following files:
    - Extract the archive and place the `nzportable` (or `nzportable64`) executable in your AMP instance root directory
 
 2. **Game Assets**
-   - Download `pc-nzp-assets.zip`
+   - Download `pc-nzp-assets.zip` from the [NZP GitHub Releases](https://github.com/nzp-team/nzportable/releases) page
+   - If not available as a separate file, the assets may be included in the main game package
    - Extract it alongside the binary (should create an `nzp` folder)
 
 3. **QuakeC Files**
-   - Download `fte-nzp-qc.zip`
-   - Download `standard-nzp-qc.zip`
+   - Download `fte-nzp-qc.zip` from the [NZP GitHub Releases](https://github.com/nzp-team/nzportable/releases) page
+   - Download `standard-nzp-qc.zip` from the [NZP GitHub Releases](https://github.com/nzp-team/nzportable/releases) page
    - Extract both into the `nzp` directory
    - You should see `.dat` files in the `nzp` folder after extraction
+   
+   **Note**: If these files are not available as separate downloads, they may be included in the main game release package. Check the release assets on GitHub for all available files.
 
 For detailed download links and setup instructions, visit the [NZP Server Setup Documentation](https://docs.nzp.gay/server/server-setup).
 
