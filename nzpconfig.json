@@ -1,0 +1,103 @@
+{
+  "Settings": [
+    {
+      "Key": "sv_port",
+      "Name": "Server Port (UDP)",
+      "Description": "The UDP port the server will listen on",
+      "Type": "Integer",
+      "DefaultValue": "27500",
+      "MinValue": 1,
+      "MaxValue": 65535,
+      "Required": true
+    },
+    {
+      "Key": "sv_port_tcp",
+      "Name": "Server Port (TCP/WebSocket)",
+      "Description": "The TCP/WebSocket port the server will listen on",
+      "Type": "Integer",
+      "DefaultValue": "27501",
+      "MinValue": 1,
+      "MaxValue": 65535,
+      "Required": false
+    },
+    {
+      "Key": "com_protocolname",
+      "Name": "Protocol Name",
+      "Description": "Protocol name for the server (NZP-REBOOT for desktop, NZP-REBOOT-WEB for web)",
+      "Type": "String",
+      "DefaultValue": "NZP-REBOOT",
+      "Required": true
+    },
+    {
+      "Key": "sv_mintic",
+      "Name": "Minimum Tick Rate",
+      "Description": "Minimum server tick rate",
+      "Type": "Integer",
+      "DefaultValue": "20",
+      "MinValue": 1,
+      "MaxValue": 1000,
+      "Required": false
+    },
+    {
+      "Key": "sv_maxtic",
+      "Name": "Maximum Tick Rate",
+      "Description": "Maximum server tick rate",
+      "Type": "Integer",
+      "DefaultValue": "1000",
+      "MinValue": 1,
+      "MaxValue": 1000,
+      "Required": false
+    },
+    {
+      "Key": "sv_public",
+      "Name": "Public Server",
+      "Description": "Whether the server should be publicly listed",
+      "Type": "Boolean",
+      "DefaultValue": "true",
+      "Required": false
+    },
+    {
+      "Key": "hostname",
+      "Name": "Server Hostname",
+      "Description": "The name of the server",
+      "Type": "String",
+      "DefaultValue": "NZP Server",
+      "Required": false
+    },
+    {
+      "Key": "maxclients",
+      "Name": "Max Clients",
+      "Description": "Maximum number of clients that can connect",
+      "Type": "Integer",
+      "DefaultValue": "32",
+      "MinValue": 1,
+      "MaxValue": 64,
+      "Required": false
+    }
+  ],
+  "Startup": {
+    "PreStart": [],
+    "PostStart": [],
+    "PreStop": [],
+    "PostStop": []
+  },
+  "Environment": {},
+  "Ports": [
+    {
+      "Name": "Game Port (UDP)",
+      "Port": 27500,
+      "Protocol": "UDP",
+      "Description": "Main game port for UDP connections"
+    },
+    {
+      "Name": "Game Port (TCP/WebSocket)",
+      "Port": 27501,
+      "Protocol": "TCP",
+      "Description": "WebSocket port for web client connections"
+    }
+  ],
+  "Updates": {
+    "Enabled": false,
+    "Type": "None"
+  }
+}

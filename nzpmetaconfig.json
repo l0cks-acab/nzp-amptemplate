@@ -1,0 +1,27 @@
+{
+  "Name": "Nazi Zombies Portable",
+  "ShortName": "NZP",
+  "Description": "Nazi Zombies Portable (NZP) dedicated server template for AMP",
+  "Author": "AMP Community",
+  "Version": "1.0.0",
+  "Website": "https://docs.nzp.gay/",
+  "Category": "Game Server",
+  "Tags": [
+    "game",
+    "fps",
+    "zombies",
+    "quake",
+    "fteqw"
+  ],
+  "SupportedPlatforms": [
+    "Windows",
+    "Linux"
+  ],
+  "Requirements": {
+    "MinimumRAM": 512,
+    "RecommendedRAM": 1024,
+    "MinimumDiskSpace": 500,
+    "RecommendedDiskSpace": 1000
+  },
+  "Notes": "Requires NZP-specific FTEQW binary (nzportable/nzportable64), pc-nzp-assets.zip, and QuakeC files (fte-nzp-qc.zip, standard-nzp-qc.zip). Extract assets alongside the binary and QuakeC files into the nzp directory."
+}
