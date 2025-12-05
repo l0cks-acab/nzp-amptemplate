@@ -40,6 +40,5 @@ UpdateCheckFollowRedirects=true
 UpdateCheckMaxRedirects=5
 CommandLineParameterFormat=+{0} {1}
 CommandLineParameterDelimiter= 
-StartupConfirmationMode=WaitForMessage
-StartupConfirmationExpression=.*Server started.*
+StartupConfirmationMode=Immediate
 ShutdownMethod=RunCommand
