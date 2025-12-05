@@ -98,7 +98,7 @@
         "InputType": "checkbox",
         "ParamFieldName": "sv_public",
         "IncludeInCommandLine": true,
-        "DefaultValue": "1",
+        "DefaultValue": "True",
         "EnumValues": {
             "False": "0",
             "True": "1"
