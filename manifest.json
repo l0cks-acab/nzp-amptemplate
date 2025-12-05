@@ -1,0 +1,31 @@
+{
+  "Templates": [
+    {
+      "Name": "nzp",
+      "DisplayName": "Nazi Zombies Portable",
+      "Description": "Nazi Zombies Portable (NZP) dedicated server template for AMP",
+      "Author": "l0cks-acab",
+      "Version": "1.0.0",
+      "Files": [
+        "nzp.kvp",
+        "nzpconfig.json",
+        "nzpmetaconfig.json",
+        "nzpports.json",
+        "nzpupdates.json"
+      ],
+      "Category": "Game Server",
+      "Tags": [
+        "game",
+        "fps",
+        "zombies",
+        "quake",
+        "fteqw"
+      ],
+      "SupportedPlatforms": [
+        "Windows",
+        "Linux"
+      ]
+    }
+  ]
+}
+
